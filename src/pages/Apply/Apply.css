@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     background-image: url('../../assets/christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg');
+    overflow-y: hidden;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
