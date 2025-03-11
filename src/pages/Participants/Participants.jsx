@@ -8,12 +8,12 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 function Participants() {
-  function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
+  function createData(roll, eventName, Department, Venue, Date) {
+    return { roll, eventName, Department, Venue, Date };
   }
   const rows = [
-    createData('Mithul', 'Dance', '10:00 AM', 'Seminar Hall','12-10-2025'),
-    createData('mike', 'music', '12:30 PM', 'Learning Centre','12-10-2025'),
+    createData('7376241CS275', 'Dance', 'CSE', 'Seminar Hall','12-10-2025'),
+    createData('7376241CS190', 'music', 'CSE', 'Bit Auditorium','12-10-2025'),
   ];
   return (
     <div className="participants-container">
@@ -24,26 +24,24 @@ function Participants() {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
-                  <TableCell sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Student</TableCell>
+                  <TableCell sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Roll Number</TableCell>
                   <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Event Name</TableCell>
-                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Event Time</TableCell>
-                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Event Venue</TableCell>
-                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Event Date</TableCell>
+                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Department</TableCell>
+                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Venue</TableCell>
+                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Date</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 {rows.map((row) => (
                   <TableRow
-                    key={row.name}
+                    key={row.roll}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <TableCell component="th" scope="row" sx={{fontSize:18}}>
-                      {row.name}
-                    </TableCell>
-                    <TableCell align="right" sx={{fontSize:18}}>{row.calories}</TableCell>
-                    <TableCell align="right" sx={{fontSize:18}}>{row.fat}</TableCell>
-                    <TableCell align="right" sx={{fontSize:18}}>{row.carbs}</TableCell>
-                    <TableCell align="right" sx={{fontSize:18}}>{row.protein}</TableCell>
+                    <TableCell sx={{fontSize:18}}>{row.roll}</TableCell>
+                    <TableCell align="right" sx={{fontSize:18}}>{row.eventName}</TableCell>
+                    <TableCell align="right" sx={{fontSize:18}}>{row.Department}</TableCell>
+                    <TableCell align="right" sx={{fontSize:18}}>{row.Venue}</TableCell>
+                    <TableCell align="right" sx={{fontSize:18}}>{row.Date}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

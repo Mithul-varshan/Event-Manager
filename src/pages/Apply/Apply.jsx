@@ -16,7 +16,7 @@ function Apply() {
             alignItems: "center",
             justifyContent: "center",
             gap: 2,
-            background: "rgba(255, 255, 255, 0.4)",
+            background: "rgba(255, 255, 255, 0.83)",
             backdropFilter: "blur(10px)",
             padding: "30px",
             borderRadius: "12px",
@@ -28,9 +28,11 @@ function Apply() {
           noValidate
           autoComplete="off"
         >
-          <TextField label="Applier Name" variant="outlined" fullWidth />
+          <TextField label="Event Name" variant="outlined" fullWidth />
           <TextField label="Roll Number" variant="outlined" fullWidth />
           <TextField label="Department" variant="outlined" fullWidth />
+          <TextField label="Venue" variant="outlined" fullWidth />
+          <TextField label="Date" InputLabelProps={{ shrink: true }} type='date' variant="outlined" fullWidth  />
           <Button
               variant="contained"
               sx={{
@@ -43,7 +45,7 @@ function Apply() {
                 "&:hover": { backgroundColor: "#059669" },
               }}
             >
-              Apply
+              ADD
             </Button>
         </Box>
 

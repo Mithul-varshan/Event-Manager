@@ -23,7 +23,7 @@ function Create() {
             alignItems: "center",
             justifyContent: "center",
             gap: 2,
-            background: "rgba(255, 255, 255, 0.34)",
+            background: "rgba(255, 255, 255, 0.93)",
             backdropFilter: "blur(10px)",
             padding: "30px",
             borderRadius: "12px",
