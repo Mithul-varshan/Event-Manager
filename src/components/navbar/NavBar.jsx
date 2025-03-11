@@ -8,10 +8,10 @@ function NavBar() {
     <>
       <div className="nav-container">
         <ul>
-          <li onClick={() => navigate('/')}>Events</li>
-          <li onClick={() => navigate('/create')}>Create</li>
-          <li onClick={() => navigate('/apply')}>Apply</li>
-          <li onClick={() => navigate('/participants')}>Participants</li>
+          <li onClick={() => navigate('/Event-Manager')}>Events</li>
+          <li onClick={() => navigate('/Event-Manager/create')}>Create</li>
+          <li onClick={() => navigate('/Event-Manager/apply')}>Apply</li>
+          <li onClick={() => navigate('/Event-Manager/participants')}>Participants</li>
         </ul>
       </div>
     </>

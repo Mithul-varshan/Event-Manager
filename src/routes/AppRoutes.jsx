@@ -7,10 +7,10 @@ import Create from '../pages/Create/Create'
 function AppRoutes() {
   return (
     <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/create' element={<Create/>}/>
-        <Route path='/apply' element={<Apply/>}/>
-        <Route path='/participants' element={<Participants/>}/>
+        <Route path='/Event-Manager' element={<Home/>}/>
+        <Route path='/Event-Manager/create' element={<Create/>}/>
+        <Route path='/Event-Manager/apply' element={<Apply/>}/>
+        <Route path='/Event-Manager/participants' element={<Participants/>}/>
     </Routes>
   )
 }
