@@ -15,7 +15,7 @@ function Home() {
             <h1>
               Change Your Mind <br /> To Become Success
             </h1>
-            <button onClick={() => navigate('/apply')}>Apply NOW</button>
+            <button onClick={() => navigate('/Event-Manager/apply')}>Apply NOW</button>
           </div>
         </div>
       </div>
