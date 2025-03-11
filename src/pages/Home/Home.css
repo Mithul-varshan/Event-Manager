@@ -70,11 +70,60 @@
 }
 
 
-.event-card{
-    height: 40%;
-    width: 20%;
-    margin-top: 10px;
-    margin-left: 30px;
-    background-color: #f9741674;
-    border-radius: 10px;
+
+/* CARD style */   
+ 
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+.event-card {
+    width: 280px; 
+    min-height: 180px; 
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.event-card p {
+    font-size: 16px;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    white-space: normal; 
+}
+
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-card h3, .event-card p {
+    margin: 10px 0;
+    color: #333;
+}
+
+
+.event-card button {
+    background: linear-gradient(to right, #ff6600, #ff3399);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.event-card button:hover {
+    background: linear-gradient(to right, #ff3399, #ff6600);
+    transform: scale(1.1);
 }
