@@ -1,0 +1,80 @@
+.background {
+    background-image: url('../../assets/christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    position: relative; 
+}
+
+.overlap-background {
+    background-color: rgba(0, 0, 0, 0.793);
+    background-image: url('../../assets/man_pic.png');
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: right bottom; 
+    height: 100%;
+    width: 100%;
+}
+
+.overlap-text {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    max-width: 40%;
+}
+
+.overlap-text p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ffcc00; 
+    margin-bottom: 10px;
+}
+
+.overlap-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.overlap-text button {
+    background: linear-gradient(to right, #ff6600, #ff3399);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.overlap-text button:hover {
+    background: linear-gradient(to right, #ff3399, #ff6600);
+    transform: scale(1.05); 
+}
+
+.events-container{
+    height: 100vh;
+    background-color: rgba(241, 172, 172, 0.208);
+    text-align: center;
+}
+.events-container-head {
+    background: linear-gradient(to right, #f97316, #ec4899); 
+    color: white; 
+    text-align: center;
+    padding: 20px; 
+}
+
+
+.event-card{
+    height: 40%;
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: #f9741674;
+    border-radius: 10px;
+}
