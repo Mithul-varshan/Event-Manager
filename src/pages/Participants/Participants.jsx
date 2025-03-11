@@ -24,11 +24,11 @@ function Participants() {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
-                  <TableCell>Student</TableCell>
-                  <TableCell align="right">Event Name</TableCell>
-                  <TableCell align="right">Event Time</TableCell>
-                  <TableCell align="right">Event Venue</TableCell>
-                  <TableCell align="right">Event Date</TableCell>
+                  <TableCell sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Student</TableCell>
+                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Event Name</TableCell>
+                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Event Time</TableCell>
+                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Event Venue</TableCell>
+                  <TableCell align="right" sx={{fontSize:20, fontWeight:'bold', color:'#333', fontFamily:'Poppins'}}>Event Date</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -37,13 +37,13 @@ function Participants() {
                     key={row.name}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <TableCell component="th" scope="row">
+                    <TableCell component="th" scope="row" sx={{fontSize:18}}>
                       {row.name}
                     </TableCell>
-                    <TableCell align="right">{row.calories}</TableCell>
-                    <TableCell align="right">{row.fat}</TableCell>
-                    <TableCell align="right">{row.carbs}</TableCell>
-                    <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right" sx={{fontSize:18}}>{row.calories}</TableCell>
+                    <TableCell align="right" sx={{fontSize:18}}>{row.fat}</TableCell>
+                    <TableCell align="right" sx={{fontSize:18}}>{row.carbs}</TableCell>
+                    <TableCell align="right" sx={{fontSize:18}}>{row.protein}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

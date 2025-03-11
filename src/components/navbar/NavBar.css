@@ -1,5 +1,5 @@
 .nav-container {
-    background-color: #0000003b; 
+    background-color: #f1eeee3b; 
     padding: 30px;
   }
   
@@ -14,7 +14,7 @@
   
   .nav-container li {
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
